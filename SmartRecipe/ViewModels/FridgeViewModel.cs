@@ -1,4 +1,5 @@
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using SmartRecipe.Models;
@@ -12,7 +13,17 @@ public partial class FridgeViewModel : ViewModelBase
 
     [ObservableProperty]
     private ObservableCollection<Ingredient> _ingredients;
-
+    [ObservableProperty]
+    private bool _isSavedMessageVisible;
+    
+    [RelayCommand]
+    private async Task SaveAsync()
+    {
+        _dataService.SaveIngredients(Ingredients);
+        IsSavedMessageVisible = true;
+        await Task.Delay(3000);
+        IsSavedMessageVisible = false;
+    }
     public FridgeViewModel()
     {
         _dataService = new JsonDataService();
@@ -37,10 +48,5 @@ public partial class FridgeViewModel : ViewModelBase
                 new Ingredient("Цибуля")
             };
         }
-    }
-    [RelayCommand]
-    private void Save()
-    {
-        _dataService.SaveIngredients(Ingredients);
     }
 }
