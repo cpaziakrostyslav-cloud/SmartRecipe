@@ -3,13 +3,29 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="using:SmartRecipe.ViewModels"
+             xmlns:models="using:SmartRecipe.Models"
              x:DataType="vm:FridgeViewModel"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="SmartRecipe.Views.FridgeView">
-    <Grid>
-        <TextBlock Text="Тут буде гарний список продуктів" 
-                   FontSize="24" 
-                   HorizontalAlignment="Center" 
-                   VerticalAlignment="Center"/>
+    
+    <Grid RowDefinitions="Auto, *">
+        <TextBlock Grid.Row="0" 
+                   Text="Наявні інгредієнти" 
+                   Classes="PageTitle"/>
+        <ListBox Grid.Row="1" 
+                 ItemsSource="{Binding Ingredients}" 
+                 Background="Transparent"
+                 BorderThickness="0">
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="models:Ingredient">
+                    <Border Classes="Card">
+                        <CheckBox IsChecked="{Binding IsAvailable}" 
+                                  Content="{Binding Name}" 
+                                  Classes="CardCheckbox"
+                                  FontSize="16"/>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </UserControl>
