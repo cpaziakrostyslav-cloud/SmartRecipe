@@ -1,0 +1,10 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <x:String x:Key="SettingsTitle">Налаштування системи</x:String>
+    <x:String x:Key="ThemeTitle">Вигляд програми</x:String>
+    <x:String x:Key="ThemeDesc">Оберіть комфортний режим відображення інтерфейсу</x:String>
+    <x:String x:Key="LangTitle">Мова інтерфейсу</x:String>
+    <x:String x:Key="LangDesc">Динамічна зміна мови текстових елементів</x:String>
+    <x:String x:Key="DarkThemeOn">Темний режим</x:String>
+    <x:String x:Key="DarkThemeOff">Світлий режим</x:String>
+</ResourceDictionary>

@@ -45,7 +45,13 @@ public partial class FridgeViewModel : ViewModelBase
                 new Ingredient("Помідори"),
                 new Ingredient("Сир твердий"),
                 new Ingredient("Картопля"),
-                new Ingredient("Цибуля")
+                new Ingredient("Цибуля"),
+                new Ingredient("Вівсянка"),
+                new Ingredient("Банани"),
+                new Ingredient("Буряк"),
+                new Ingredient("Рис"),
+                new Ingredient("Капуста"),
+                new Ingredient("Сіль")
             };
         }
     }
