@@ -20,8 +20,16 @@
                            Foreground="{DynamicResource SidebarText}" 
                            Margin="0,20,0,40"
                            HorizontalAlignment="Center"/>
+                <Button Content="{DynamicResource MainMenu}" 
+                        Command="{Binding NavigateToDashboardCommand}"
+                        HorizontalAlignment="Stretch" 
+                        HorizontalContentAlignment="Left"
+                        Background="Transparent" 
+                        Foreground="{DynamicResource SidebarText}" 
+                        FontSize="16" 
+                        Padding="15,10"/>
 
-                <Button Content="Мій холодильник" 
+                <Button Content="{DynamicResource FridgeMenu}" 
                         Command="{Binding NavigateToFridgeCommand}"
                         HorizontalAlignment="Stretch" 
                         HorizontalContentAlignment="Left"
@@ -30,7 +38,7 @@
                         FontSize="16" 
                         Padding="15,10"/>
                 
-                <Button Content="Каталог рецептів" 
+                <Button Content="{DynamicResource RecipesMenu}" 
                         Command="{Binding NavigateToRecipesCommand}"
                         HorizontalAlignment="Stretch" 
                         HorizontalContentAlignment="Left"
@@ -41,7 +49,7 @@
                 
                 <Separator Background="#34495E" Margin="0,10" Height="2"/>
                 
-                <Button Content="Налаштування" 
+                <Button Content="{DynamicResource SettingMenu}" 
                         Command="{Binding NavigateToSettingsCommand}"
                         HorizontalAlignment="Stretch" 
                         HorizontalContentAlignment="Left"

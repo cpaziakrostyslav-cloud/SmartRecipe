@@ -10,9 +10,14 @@ public partial class MainWindowViewModel : ViewModelBase
 
     public MainWindowViewModel()
     {
-        CurrentPage = new FridgeViewModel();
+        CurrentPage = new DashboardViewModel();
     }
-    
+
+    [RelayCommand]
+    private void NavigateToDashboard()
+    {
+        CurrentPage = new DashboardViewModel();
+    }
     [RelayCommand]
     private void NavigateToFridge()
     {

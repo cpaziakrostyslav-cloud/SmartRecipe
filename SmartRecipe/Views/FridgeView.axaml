@@ -10,7 +10,7 @@
     <Grid RowDefinitions="Auto, *, Auto">
         
         <TextBlock Grid.Row="0" 
-                   Text="Наявні інгредієнти" 
+                   Text="{DynamicResource Ingredients}" 
                    Classes="PageTitle"/>
 
         <ListBox Grid.Row="1" 
@@ -34,14 +34,14 @@
                     Margin="0,20,0,0" 
                     Spacing="15">
             
-            <TextBlock Text="Успішно збережено" 
+            <TextBlock Text="{DynamicResource SuccessSave}" 
                        IsVisible="{Binding IsSavedMessageVisible}"
                        VerticalAlignment="Center"
                        Foreground="#27AE60"
                        FontWeight="SemiBold"
                        FontSize="16"/>
 
-            <Button Content="Зберегти мій холодильник" 
+            <Button Content="{DynamicResource SaveMyFridge}" 
                     Command="{Binding SaveCommand}"
                     Padding="20,10"
                     Background="#3498DB"

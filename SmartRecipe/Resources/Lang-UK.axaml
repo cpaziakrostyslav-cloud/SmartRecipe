@@ -7,4 +7,26 @@
     <x:String x:Key="LangDesc">Динамічна зміна мови текстових елементів</x:String>
     <x:String x:Key="DarkThemeOn">Темний режим</x:String>
     <x:String x:Key="DarkThemeOff">Світлий режим</x:String>
+    <x:String x:Key="MainMenu">Головна сторінка</x:String>
+    <x:String x:Key="FridgeMenu">Мій холодильник</x:String>
+    <x:String x:Key="RecipesMenu">Каталог рецептів</x:String>
+    <x:String x:Key="SettingMenu">Налаштування</x:String>
+    <x:String x:Key="Welcome">Вітаємо у системі SmartRecipe!</x:String>
+    <x:String x:Key="WelcomeInstrument">Ваш персональний інструмент для підбору страв та управління запасами.</x:String>
+    <x:String x:Key="CountRecipes">Кількість рецептів</x:String>
+    <x:String x:Key="CountProduct">Продуктів у базі</x:String>
+    <x:String x:Key="Available">Є в наявності</x:String>
+    <x:String x:Key="Recommend">Рекомендація на сьогодні</x:String>
+    <x:String x:Key="Photo">ФОТО</x:String>
+    <x:String x:Key="Ingredients">Наявні інгредієнти</x:String>
+    <x:String x:Key="SuccessSave">Успішно збережено</x:String>
+    <x:String x:Key="SaveMyFridge">Зберегти мій холодильник</x:String>
+    <x:String x:Key="NewRecipe">Новий рецепт</x:String>
+    <x:String x:Key="AddRecipe">Додати рецепт</x:String>
+    <x:String x:Key="ExampleName">Назва страви (наприклад: Борщ)</x:String>
+    <x:String x:Key="ExampleDescription">Опис або кроки приготування</x:String>
+    <x:String x:Key="ExampleIngredients">Інгредієнти (через кому: картопля, буряк, м'ясо)</x:String>
+    <x:String x:Key="SaveToCatalog">Зберегти в каталог</x:String>
+    <x:String x:Key="Delete">Видалити</x:String>
+
 </ResourceDictionary>

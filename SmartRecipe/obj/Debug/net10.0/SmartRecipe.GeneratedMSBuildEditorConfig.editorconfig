@@ -26,6 +26,9 @@ build_property.EnableCodeStyleSeverity =
 [/Users/gordinskij/RiderProjects/SmartRecipe/SmartRecipe/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[/Users/gordinskij/RiderProjects/SmartRecipe/SmartRecipe/Views/DashboardView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/Users/gordinskij/RiderProjects/SmartRecipe/SmartRecipe/Views/FridgeView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

@@ -7,4 +7,26 @@
     <x:String x:Key="LangDesc">Dynamic change of text elements language</x:String>
     <x:String x:Key="DarkThemeOn">Dark Mode</x:String>
     <x:String x:Key="DarkThemeOff">Light Mode</x:String>
+    <x:String x:Key="MainMenu">Main page</x:String>
+    <x:String x:Key="FridgeMenu">My refrigerator</x:String>
+    <x:String x:Key="RecipesMenu">Catalog of recipes</x:String>
+    <x:String x:Key="SettingMenu">Settings</x:String>
+    <x:String x:Key="Welcome">Welcome to the SmartRecipe system!</x:String>
+    <x:String x:Key="WelcomeInstrument">Your personal tool for meal selection and inventory management.</x:String>
+    <x:String x:Key="CountRecipes">Number of recipes</x:String>
+    <x:String x:Key="CountProduct">Products in the database</x:String>
+    <x:String x:Key="Available">It is available</x:String>
+    <x:String x:Key="Recommend">Recommendation for today</x:String>
+    <x:String x:Key="Photo">PHOTO</x:String>
+    <x:String x:Key="Ingredients">Available ingredients</x:String>
+    <x:String x:Key="SuccessSave">Saved successfully</x:String>
+    <x:String x:Key="SaveMyFridge">Save my fridge</x:String>
+    <x:String x:Key="AddRecipe">Add a recipe</x:String>
+    <x:String x:Key="NewRecipe">New recipe</x:String>
+    <x:String x:Key="ExampleName">Name of the dish (for example: Borscht)</x:String>
+    <x:String x:Key="ExampleDescription">Description or cooking steps</x:String>
+    <x:String x:Key="ExampleIngredients">Ingredients (through commas: potatoes, beets, meat)</x:String>
+    <x:String x:Key="SaveToCatalog">Save to directory</x:String>
+    <x:String x:Key="Delete">Delete</x:String>
+    
 </ResourceDictionary>

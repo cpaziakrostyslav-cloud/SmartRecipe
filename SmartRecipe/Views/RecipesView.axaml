@@ -10,11 +10,11 @@
     <Grid RowDefinitions="Auto, Auto, *">
         <Grid Grid.Row="0" ColumnDefinitions="*, Auto" Margin="0,0,0,20">
             <TextBlock Grid.Column="0" 
-                       Text="Каталог рецептів" 
+                       Text="{DynamicResource RecipesMenu}" 
                        Classes="PageTitle" 
                        Margin="0"/>
             <Button Grid.Column="1" 
-                    Content="Додати рецепт" 
+                    Content="{DynamicResource AddRecipe}" 
                     Command="{Binding ToggleAddFormCommand}"
                     Background="#34495E"
                     Foreground="White"
@@ -29,13 +29,13 @@
                 Background="#ECF0F1"
                 Margin="0,0,0,20">
             <StackPanel Spacing="10">
-                <TextBlock Text="Новий рецепт" FontWeight="Bold" FontSize="16" Foreground="#2C3E50"/>
+                <TextBlock Text="{DynamicResource NewRecipe}" FontWeight="Bold" FontSize="16" Foreground="#2C3E50"/>
                 
-                <TextBox Text="{Binding NewRecipeName}" Watermark="Назва страви (наприклад: Борщ)"/>
-                <TextBox Text="{Binding NewRecipeDescription}" Watermark="Опис або кроки приготування" Height="60" TextWrapping="Wrap"/>
-                <TextBox Text="{Binding NewRecipeIngredients}" Watermark="Інгредієнти (через кому: картопля, буряк, м'ясо)"/>
+                <TextBox Text="{Binding NewRecipeName}" Watermark="{DynamicResource ExampleName}"/>
+                <TextBox Text="{Binding NewRecipeDescription}" Watermark="{DynamicResource ExampleDescription}" Height="60" TextWrapping="Wrap"/>
+                <TextBox Text="{Binding NewRecipeIngredients}" Watermark="{DynamicResource ExampleIngredients}"/>
                 
-                <Button Content="Зберегти в каталог" 
+                <Button Content="{DynamicResource SaveToCatalog}" 
                         Command="{Binding AddNewRecipeCommand}"
                         Background="#27AE60"
                         Foreground="White"
@@ -73,7 +73,7 @@
                             </StackPanel>
 
                             <Button Grid.Column="1" 
-                                    Content="Видалити" 
+                                    Content="{DynamicResource Delete}" 
                                     Command="{Binding $parent[UserControl].DataContext.DeleteRecipeCommand}"
                                     CommandParameter="{Binding}"
                                     x:CompileBindings="False"
